@@ -6,6 +6,7 @@ function jump(){
     if (hero.classList != "animate"){
        hero.classList.add("animate");
     }
+    set
 }
 
 document.addEventListener("keydown", function(){
