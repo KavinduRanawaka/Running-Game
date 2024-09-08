@@ -1,4 +1,43 @@
 
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+/* start here */
+
 .container {
     background: url(images/forest1.gif) center no-repeat;
     position: relative;
@@ -24,6 +63,7 @@
 .hero {
     width: 20px;
     height: 50px;
+    /* background: url(images/cactus.png); */
     position: relative;
     top: 150px;
     left: 20px;
@@ -33,6 +73,7 @@
     width: 50px;
     height: 50px;
 }
+
 
 .animate {
     animation: jump 0.3s linear;
@@ -57,13 +98,17 @@
 }
 
 .vilan {
+    /* background-color: blue; */
     width: 20px;
     height: 20px;
     position: relative;
     top: 115px;
     left: 450px;
-    /* animation: move 1s infinite linear; */
+    animation: move 1s infinite linear;
     z-index: 1;
+}
+.vilan img{
+    width: 50px;
 }
 
 @keyframes move {
@@ -73,7 +118,4 @@
     100% {
         left: -20px
     }
-}
-.vilan img{
-    width: 50px;
 }
